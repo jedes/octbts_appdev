@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 
 RUN apt-get -y update && apt-get -y install apt-transport-https
 
-ADD http://debian.pengutronix.de/debian/pengutronix.list /etc/apt/sources.list.d/
+RUN echo deb http://debian.pengutronix.de/debian/ jessie main contrib non-free > /etc/apt/sources.list.d/pengutronix.list
 
 RUN apt-get -y update && apt-get install --allow-unauthenticated -y pengutronix-archive-keyring && apt-get -y update && \
 	apt-get install -y curl wget make file libpython2.7 \
