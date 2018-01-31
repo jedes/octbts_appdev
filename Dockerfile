@@ -18,7 +18,7 @@ ENV CC="/opt/OSELAS.Toolchain-2011.11.3/arm-cortexa9-linux-gnueabi/gcc-4.6.2-gli
 ENV CC="/opt/OSELAS.Toolchain-2011.11.3/arm-cortexa9-linux-gnueabi/gcc-4.6.2-glibc-2.14.1-binutils-2.21.1a-kernel-2.6.39-sanitized/bin/arm-cortexa9-linux-gnueabi-gcc"
 ENV CXX="/opt/OSELAS.Toolchain-2011.11.3/arm-cortexa9-linux-gnueabi/gcc-4.6.2-glibc-2.14.1-binutils-2.21.1a-kernel-2.6.39-sanitized/bin/arm-cortexa9-linux-gnueabi-g++"
 ENV GDB="/opt/OSELAS.Toolchain-2011.11.3/arm-cortexa9-linux-gnueabi/gcc-4.6.2-glibc-2.14.1-binutils-2.21.1a-kernel-2.6.39-sanitized/bin/arm-cortexa9-linux-gnueabi-gdb"
-ENV CPPFLAGS="-Wall -isystem /sysroot/include -isystem /sysroot/usr/include"
-ENV LDFLAGS="-L/sysroot/lib -L/sysroot/usr/lib"
+ENV CPPFLAGS="-Wall -isystem /ptx_sysroot/include -isystem /ptx_sysroot/usr/include"
+ENV LDFLAGS="-L/ptx_sysroot/lib -L/ptx_sysroot/usr/lib"
 
 CMD ["/bin/bash", "--login"]
